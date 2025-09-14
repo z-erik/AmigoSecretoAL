@@ -2,6 +2,8 @@
 let yaSorteado= false;
 let amigos = [];
 
+//creamos en el archivo hmtl una etiqueta ul con el id miLista para poder controlarla y modificarla
+//despues se crea una variable lista para poder controlarla desde el codigo javascript
 const lista = document.getElementById('miLista');
 
 
@@ -9,11 +11,11 @@ function agregarAmigo(){
 const input =document.getElementById("amigo");
 const nombre = input.value.trim();
 
-//La condicion no permite que el espacio este en blance
+//La condicion no permite que el espacio este en blanco
 if(nombre===""){
 alert("Por favor inserte un nombre valido")
 
-//la condicion no permite que se ingrese numeros
+//la condicion no permite que se ingresen numeros
 }else if(nombre>=0){
 alert("Por favor no inserte numeros")
 
